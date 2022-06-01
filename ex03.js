@@ -13,6 +13,6 @@ while (contador < 20) {
 }
 console.log(arrayNum);
 console.log("Antes do metodo sort.");
-arrayNum.sort();
+arrayNum.sort((a, b) => a - b);
 console.log("Depois do metodo sort.");
 console.log(arrayNum);
