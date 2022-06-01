@@ -5,7 +5,8 @@ console.log(
   "Olá, crie uma senha. Ela deve conter ao menos 8 caracteres, um número e um caractere especial!"
 );
 console.log(
-  `Esses são os caracteres especiais aceitos: (espaço) ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ `
+  `Esses são os caracteres especiais aceitos: 
+  (espaço) ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ `
 );
 /* 
 
@@ -67,6 +68,7 @@ while (senhaCorreta != true) {
       senhaSplit[i] == "^" ||
       senhaSplit[i] == "_" ||
       senhaSplit[i] == "`" ||
+      senhaSplit[i] == '"' ||
       senhaSplit[i] == "|" 
     ) {
       countCaracteresEspeciais++;
