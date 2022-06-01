@@ -1,6 +1,12 @@
 const prompt = require("prompt-sync")();
 console.clear();
 
+/* 
+Faça um programa que peça um número inteiro e crie arrays com:
+Todos os números pares de 0 ao número escolhido;
+Todos os números ímpares do 0 ao número escolhido.
+*/
+
 let numeroInteiro = +prompt("Digite um número inteiro: ");
 
 let arrayTodo = [];

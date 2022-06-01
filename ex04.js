@@ -1,6 +1,11 @@
 const prompt = require("prompt-sync")();
 console.clear();
 
+/* 
+Faça um programa que peça o nome de usuário e a senha de um usuário. 
+A senha deve ter no mínimo 8 caracteres, pelo menos um número e um caracter especial.
+*/
+
 console.log(
   "Olá, crie uma senha. Ela deve conter ao menos 8 caracteres, um número e um caractere especial!"
 );
@@ -8,9 +13,6 @@ console.log(
   `Esses são os caracteres especiais aceitos: 
   (espaço) ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _ `
 );
-/* 
-
-*/
 
 let senhaCorreta = false;
 while (senhaCorreta != true) {
@@ -69,7 +71,7 @@ while (senhaCorreta != true) {
       senhaSplit[i] == "_" ||
       senhaSplit[i] == "`" ||
       senhaSplit[i] == '"' ||
-      senhaSplit[i] == "|" 
+      senhaSplit[i] == "|"
     ) {
       countCaracteresEspeciais++;
     }
